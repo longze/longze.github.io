@@ -14,9 +14,18 @@
 		li{ list-style: none; }
 		html{
 			font-family: cursive;
-			background: #222 url('src/bg.png') 50% 100% no-repeat;
+			background-color: #222;
 			color: #fff;
 			line-height: 1.8;
+		}
+		.background{
+			position: fixed;
+			top:0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			background: url('src/bg.png') 100% 100% no-repeat;
 			background-size: contain;
 			background-attachment: fixed;
 		}
@@ -149,5 +158,6 @@
 		<p class="tac">微信：longzespa</p>
 	</div>
 	<p class="footer tac">给您不一样的“体”验</p>
+	<i class="background"></i>
 </body>
 </html>
