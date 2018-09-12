@@ -1,87 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta charset="UTF-8">
-	<title>泷泽</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="description" content="泷泽直男馆" />
+	<meta name="description" content="直男按摩" />
+	<meta name="keywords" content="直男, 男男, gay, 按摩, 筋肉," />
+	<title>泷泽直男馆</title>
 	<style>
-		html,body,h1,h2,p,ol,li,address{margin:0; padding:0;}
+		html,body,h1,h2,p,ol,li, ul,address{margin:0; padding:0;}
 		li{ list-style: none; }
 		html{
 			font-family: serif;
-			background-color: #222;
+			background: #222 url('src/bg.png') 50% 100% no-repeat;
 			color: #fff;
+			line-height: 1.8;
+			background-size: contain;
+			background-attachment: fixed;
 		}
-		body{
+		a{
+			color: #ff0;
+		}
+		.g_wrap{
 			max-width:480px;
+			width: 86%;
 			margin:0 auto;
-			padding-left:16px;
-			padding-right:16px;
+		}
+		.tac{
+			text-align: center;
+		}
+		.db{
+			display: block;
 		}
 		.header{
-			margin:4% 0;
+			margin-bottom: 16%;
+			background-color: rgba(0,0,0,0.9);
+			padding: 4% 0;
 		}
 		.header h1{
 			margin-bottom: 4%;
+			color: #ff0;
+			text-shadow: 0 0 5px #fff;
+		}
+		.mans{
+			color: #ff0;
+			font-size: 24px;
+			line-height: 32px;
 		}
 		.mans li{
-			margin-bottom: 8%;
+			margin-bottom: 16%;
+			position: relative;
 		}
-		.man{
-			padding-top: 133%;
+		.mans img{
+			display: block;
+			width: 100%;
+			margin:0 auto 16px;
 			position: relative;
 			border-radius: 16px;
-			overflow: hidden;
 			box-shadow: 0 0 16px #000;
-
 		}
-		.man img{
+		.mans strong{
 			position: absolute;
-			top:0;
+			bottom: 0;
 			left: 0;
-			width: 100%;
-			height: auto;
-			border-radius: 16px;
+			right: 0;
+			background: rgba(0,0,0,0.8);
+			color: #ff0;
+			padding: 8px 16px;
+			border-radius: 0 0 16px 16px;
 		}
 		.address{
 			margin-bottom: 6%;
+		}
+		.address h2{
+			margin-bottom: 3%; 
+		}
+		.address iframe{
+			height: 240px;
+			display: block;
+			width: 100%;
+			border: none 0;
+			margin: 4% 0;
+			border-radius: 16px;
+			box-shadow: 0 0 16px #000;
+		}
+		.qr{
+			position: relative;
+			max-width: 200px;
+			margin: 0 auto 16px;
+		}
+		.qr:before{
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+		.qr img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.footer{
+			margin-top: 16%;
+			background-color: rgba(0,0,0,0.9);
+			padding: 4% 4%;
 		}
 	</style>
 </head>
 <body>
 	<div class="header">
-		<h1>你好世界</h1>
-		<p>sloge</p>
+		<div class="g_wrap">
+			<h1>泷泽直男馆</h1>
+			<p>本店提供直男健身教练全身精油专业按摩手法，为您放松一天的疲劳，拉伸僵硬的筋骨。</p>
+		</div>
 	</div>
-	<ol class="mans">
-		<li>
-			<div class="man">
-				<img src="src/300.jpg" alt="">
-			</div>
-		</li>
-		<li>
-			<div class="man">
-				<img src="src/300.jpg" alt="">
-			</div>
-		</li>
-		<li>
-			<div class="man">
-				<img src="src/300.jpg" alt="">
-			</div>
-		</li>
-		<li>
-			<div class="man">
-				<img src="src/300.jpg" alt="">
-			</div>
-		</li>
-	</ol>
-	<h2>联系我们</h2>
-	<address class="address">
-		Written by <a href="mailto:webmaster@example.com">Donald Duck</a>.<br> 
-		Visit us at:<br>
-		Example.com<br>
-		Box 564, Disneyland<br>
-		USA
-	</address>
+	<div class="g_wrap">
+		<ol class="mans tac">
+			<li><img src="man/1.jpeg" alt="刘德华"><strong>一号技师: 刘德华</strong></li>
+			<li><img src="man/2.jpeg" alt="张学友"><strong>二号技师: 张学友</strong></li>
+			<li><img src="man/3.jpeg" alt="黎明"><strong>三号技师: 黎明</strong></li>
+			<li><img src="man/4.jpeg" alt="郭富城"><strong>四号技师: 郭富城</strong></li>
+		</ol>
+		<div class="address">
+			<h2>我们在哪儿</h2>
+			<iframe src="map.html"></iframe>
+			<ul>
+				<li class="db">地址：渝中区解放碑附近，150²独立套内江景大平层，环境舒适整洁</li>
+				<li class="db">电话：<a href="tel:13594007800">13594007800</a></li>
+				<li class="db">电话：<a href="tel:13983265155">13983265155</a></li>
+			</ul>
+		</div>
+		<p class="qr">
+			<img src="src/qr.jpeg">
+		</p>
+		<p class="tac">微信：longzespa</p>
+	</div>
+	<p class="footer tac">给您不一样的“体”验</p>
 </body>
 </html>
